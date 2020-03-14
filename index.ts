@@ -4,6 +4,6 @@ class Main {
   num: number
   str: string
   constructor() {
-    this.num = getNumber(5, 5)
+    this.num = getNumber(5, 5 * 5)
   }
 }
