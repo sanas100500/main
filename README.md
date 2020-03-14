@@ -6,29 +6,36 @@ git submodule add https://github.com/sanas100500/module-1.git
 ```
 
 ## Обновить все сабмодули
-выполняется в корне основного проекта
+root
 
 ``` bash
 git submodule update --remote
 ```
 
 ## Обновить 1 сабмодуль
-выполняется в корне основного проекта
+root
 
 ``` bash
 git submodule update --remote module-1
 ```
 
 ## Обновить сабмодуль из удаленного репо
-выполняется внутри папки сабмодуля
+sub dir
 
 ``` bash
 git fetch 
 git merge
 ```
 
+## Push сабмодуля из основного проекта
+root
+
+``` bash
+git submodule update --remote --merge
+```
+
 ## Спсок изменений репозитория, включаяя сабмодули
-выполняется в корне основного проекта
+root
 
 ``` bash
 git diff --submodule
